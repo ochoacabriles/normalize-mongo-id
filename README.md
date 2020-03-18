@@ -50,4 +50,4 @@ console.log(JSON.stringify(normalizedDoc, null, 2));
     }
   ]
 }
-*/ ```
+*/
