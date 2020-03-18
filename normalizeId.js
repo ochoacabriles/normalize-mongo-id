@@ -16,4 +16,4 @@ const normalizeId = (obj) => {
   return toReturn;
 };
 
-module.exports = { normalizeId }
+module.exports = normalizeId
