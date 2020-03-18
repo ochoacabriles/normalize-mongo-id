@@ -23,6 +23,7 @@
   "homepage": "https://github.com/ochoacabriles/normalize-id#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^7.1.1"
+    "mocha": "^7.1.1",
+    "mongoose": "^5.9.5"
   }
 }

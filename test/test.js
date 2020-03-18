@@ -1,23 +1,24 @@
-const normalizeId = require('../normalizeId');
+const Mongoose = require('mongoose');
 const chai = require('chai');
+const normalizeId = require('../normalizeId');
 
 const expect = chai.expect;
 
 describe('Test normalize-mongo-id package', () => {
   it('Check _id for id deep level substitution', () => {
     const doc = {
-      _id: '000000000000000000000000',
+      _id: Mongoose.Types.ObjectId('000000000000000000000000'),
       name: 'Example doc',
       subdoc: {
-        _id: '000000000000000000000000'
+        _id: Mongoose.Types.ObjectId('000000000000000000000000')
       },
       array: [
         {
-          _id: '000000000000000000000000',
+          _id: Mongoose.Types.ObjectId('000000000000000000000000'),
           name: 'Item 0'
         },
         {
-          _id: '000000000000000000000001',
+          _id: Mongoose.Types.ObjectId('000000000000000000000001'),
           name: 'Item 1'
         }
       ]
