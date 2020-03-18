@@ -10,7 +10,7 @@ const normalizeId = (obj) => {
       delete toReturn[key]._id;
     }
     if (Array.isArray(obj[key]) && obj[key][0] instanceof Object && !obj[key][0]._bsontype) {
-      toReturn[key] = obj[key].map(item => normalize(item));
+      toReturn[key] = obj[key].map(item => normalizeId(item));
     }
   });
   return toReturn;
