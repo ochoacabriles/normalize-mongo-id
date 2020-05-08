@@ -10,7 +10,16 @@ describe('Test normalize-mongo-id package', () => {
       _id: Mongoose.Types.ObjectId('000000000000000000000000'),
       name: 'Example doc',
       subdoc: {
-        _id: Mongoose.Types.ObjectId('000000000000000000000000')
+        _id: Mongoose.Types.ObjectId('000000000000000000000000'),
+        name: 'Example subdoc',
+        subsubdoc: {
+          _id: Mongoose.Types.ObjectId('000000000000000000000000'),
+          name: 'Example subsubdoc',
+          subsubsubdoc: {
+            _id: Mongoose.Types.ObjectId('000000000000000000000000'),
+            name: 'Example subsubsubdoc'
+          }
+        }
       },
       array: [
         {
@@ -28,7 +37,16 @@ describe('Test normalize-mongo-id package', () => {
       id: '000000000000000000000000',
       name: 'Example doc',
       subdoc: {
-        id: '000000000000000000000000'
+        id: '000000000000000000000000',
+        name: 'Example subdoc',
+        subsubdoc: {
+          id: '000000000000000000000000',
+          name: 'Example subsubdoc',
+          subsubsubdoc: {
+            id: '000000000000000000000000',
+            name: 'Example subsubsubdoc'
+          }
+        }
       },
       array: [
         {
