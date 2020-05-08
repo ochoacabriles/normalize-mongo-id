@@ -1,6 +1,6 @@
 {
   "name": "normalize-mongo-id",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "A small utility to substitute _id by id in documents received from mongo",
   "main": "normalizeId.js",
   "scripts": {
